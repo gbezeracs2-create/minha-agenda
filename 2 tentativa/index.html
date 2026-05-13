@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem de Agendamento Profissional</title>
+    <!-- Ligação com o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+        <header>
+            <h1>Minha Agenda</h1>
+            <p id="status-hoje"></p>
+        </header>
+
+        <!-- Formulário de Agendamento (Visão Cliente) -->
+        <section id="sessao-agendar">
+            <h2>Novo Agendamento</h2>
+            <form id="agendamento-form">
+                <input type="text" id="cliente" placeholder="Seu Nome Completo" required>
+                
+                <div class="input-group">
+                    <input type="date" id="data" required>
+                    <select id="horario" required>
+                        <option value="">Escolha o Horário</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="btn-confirmar">Confirmar Horário</button>
+            </form>
+        </section>
+
+        <!-- Lista de Agendamentos (Visão Proprietário/Dashboard) -->
+        <section id="sessao-lista">
+            <h2>Próximos Clientes</h2>
+            <div id="lista-agendamentos">
+                <!-- Os cards de agendamento serão inseridos aqui pelo JS -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Ligação com o JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
