@@ -1,0 +1,100 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#app {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 { color: #1a2a6c; margin-bottom: 5px; }
+h2 { font-size: 1.2rem; margin-bottom: 15px; color: #555; border-bottom: 2px solid #eee; padding-bottom: 5px; }
+
+/* Formulário */
+form { display: flex; flex-direction: column; gap: 15px; margin-bottom: 40px; }
+
+.input-group { display: flex; gap: 10px; }
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+#btn-confirmar {
+    background-color: #1a2a6c;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn-confirmar:hover { background-color: #b21f1f; }
+
+/* Cards do Proprietário */
+.card-agendamento {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.card-agendamento:hover { transform: scale(1.02); }
+
+.tag-hoje {
+    background: #fdbb2d;
+    color: #000;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+    margin-bottom: 5px;
+}
+
+.info h4 { font-size: 1.1rem; }
+.info p { font-size: 0.9rem; color: #666; }
+
+.btn-excluir {
+    background: #fff;
+    color: #b21f1f;
+    border: 1px solid #b21f1f;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.btn-excluir:hover { background: #b21f1f; color: #fff; }
